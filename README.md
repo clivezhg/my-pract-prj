@@ -3,10 +3,10 @@ Select2-to-Tree
 
 Select2-to-Tree is an extension to the popular select boxes library: Select2 (https://github.com/select2/select2).
 
-Though Select2 is very versatile, it only supports a single level of nesting. See https://select2.github.io/options.html#how-many-levels-of-nesting-are-allowed
+Though Select2 is very versatile, it only supports a single level of nesting. See https://select2.github.io/options.html#how-many-levels-of-nesting-are-allowed:
 <blockquote>
 How many levels of nesting are allowed?<br>
-Because Select2 falls back to an <optgroup> when creating nested options, only a single level of nesting is supported. Any additional levels of nesting is not guarenteed to be displayed properly across all browsers and devices.</blockquote>
+Because Select2 falls back to an &lt;optgroup&gt; when creating nested options, only a single level of nesting is supported. Any additional levels of nesting is not guarenteed to be displayed properly across all browsers and devices.</blockquote>
 
 Select2-to-Tree aims to ...
 
