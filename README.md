@@ -1,3 +1,4 @@
+<script src="https://raw.githubusercontent.com/clivezhg/select2-to-tree/master/src/select2totree.js"></script>
 Select2-to-Tree
 =======
 
