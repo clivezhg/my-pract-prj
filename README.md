@@ -26,7 +26,7 @@ Then, in your HTML document, you add the Select2 library (the `*.js` file & `*.c
 
 There are 2 ways to use Select2-to-Tree:
 
-<h3>1. Use data, and empty <select>(see "Example 1" in `example/example.html`):</h3>
+<h3>1. Use data, and empty &lt;select&gt;(see "Example 1" in `example/example.html`):</h3>
 
 Suppose your HTML is like this:
 ```html
