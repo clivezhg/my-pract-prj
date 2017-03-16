@@ -27,7 +27,6 @@ Then, in your HTML document, you add the Select2 library (the `*.js` file & `*.c
 There are 2 ways to use Select2-to-Tree:
 
 <h3>1. Use data, and empty &lt;select&gt; element(see "Example 1" in "example/example.html"):</h3>
-
 Suppose your HTML is like this:
 ```html
 <select id="sel_1" style="width:16em" multiple>
@@ -59,7 +58,7 @@ $("#sel_1").select2ToTree({treeData: {dataArr:mydata}, maximumSelectionLength: 3
 
 About the data structure: "`id`" will be used as option value, "`name`" will be used as option label, and "`inc`" will be used to specify sub-level options. If your data structure is not like this, you can set arguments in "`treeData`" to change the default behavior, e.g., `treeData: {dataArr: mydata, valFld: "value", labelFld: "text", incFld: "sub"}`:
 - `dataArr`, an array containing the data.
-- `valFld`, the option value field, it's "`id`" by default.
+- `valFld`, the option value field, it's "`id`" by default. (if the value is empty, the corresponding option will be unselectable, see the "west" option in the example)
 - `labelFld`, the option label field, it's "`name`" by default.
 - `incFld`, the sub options field, it's "`inc`" by default.
 - `dftVal`, the default value.
@@ -67,7 +66,6 @@ About the data structure: "`id`" will be used as option value, "`name`" will be 
 The above are all the parameters supported by Select2-to-Tree.
 
 <h3>2. directly create the &lt;select&gt; element(see "Example 2" in "example/example.html"):</h3>
-
 If it's hard to create the required data structure, you can directly create the &lt;select&gt; element. It's like the following:
 ```html
 <select id="sel_2" style="width:8em">
@@ -79,10 +77,11 @@ If it's hard to create the required data structure, you can directly create the 
    <option value="3" class="l1">opt_3</option>
 </select>
 ```
-- the classes `l1`,`l2`,`l3`,`l4`,`l5`..., the nesting level.
-- the attribute `data-pup`, the option value of the parent level.
-- the class `non-leaf`, 
-Then, you call Select2-to-Tree:
+- the classes `l1`,`l2`,`l3`,`l4`,`l5`..., setting the nesting level.
+- the attribute `data-pup`, setting the value of the parent level option.
+- the class `non-leaf`, setting whether the option has children or not.
+
+Then, you call Select2-to-Tree (the "`treeData`" argument of Select-to-Tree is not needed here, but you can set arguments for Select2):
 ```js
 $("#sel_2").select2ToTree();
 ```
