@@ -54,7 +54,7 @@ And you call Select2-to-Tree (to generate a multiple select boxes):
 ```js
 $("#sel_1").select2ToTree({treeData: {dataArr:mydata}, maximumSelectionLength: 3});
 ```
-"`{treeData: {dataArr:mydata}`" is for Select2-to-Tree, "`maximumSelectionLength: 3`" is for Select2(and you can use other Select2 parameters)
+"`{treeData: {dataArr:mydata}`" is for Select2-to-Tree, "`maximumSelectionLength: 3`" is for Select2(and you can use the other Select2 parameters if needed)
 
 About the data structure: "`id`" will be used as option value, "`name`" will be used as option label, and "`inc`" will be used to specify sub-level options. If your data structure is not like this, you can set parameters in "`treeData`" to change the default behavior, e.g., `treeData: {dataArr: mydata, valFld: "value", labelFld: "text", incFld: "sub"}`:
 - `dataArr`, an array.
