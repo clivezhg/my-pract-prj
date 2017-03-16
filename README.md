@@ -55,9 +55,15 @@ And you call:
 $("#sel_1").select2ToTree({treeData: {dataArr:mydata}, maximumSelectionLength: 3});
 ```
 Then, 
-`{treeData: {dataArr:mydata}` is for Select2-to-Tree, `maximumSelectionLength: 3` is for Select2(and you can use other Select2 parameters)
+"`{treeData: {dataArr:mydata}`" is for Select2-to-Tree, "`maximumSelectionLength: 3`" is for Select2(and you can use other Select2 parameters)
 
-
+About the data: "`id`" will be used as option value, "`name`" will be used as option label, and "`inc`" will be used to specify sub-level options. If your data structure is not like this, you can set parameters in "`treeData`" to change the default behavior, e.g., `treeData: {dataArr: mydata, valFld: "value", labelFld: "text", incFld: "sub"}`:
+- `dataArr`, an array.
+- `valFld`, the option value field, it's "`id`" by default.
+- `labelFld`, the option label field, it's "`name`" by default.
+- `incFld`, the sub options field, it's "`inc`" by default.
+- `dftVal`, the default value
+The above are all the parameters supported by Select2-to-Tree
 
 Copyright and license
 ---------------------
