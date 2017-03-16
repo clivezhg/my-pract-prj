@@ -27,6 +27,7 @@ Then, in your HTML document, you add the Select2 library (the `*.js` file & `*.c
 There are 2 ways to use Select2-to-Tree:
 
 <h3>1. Use data, and empty &lt;select&gt; element(see "Example 1" in "example/example.html"):</h3>
+
 Suppose your HTML is like this:
 ```html
 <select id="sel_1" style="width:16em" multiple>
@@ -66,6 +67,7 @@ About the data structure: "`id`" will be used as option value, "`name`" will be 
 The above are all the parameters supported by Select2-to-Tree.
 
 <h3>2. directly create the &lt;select&gt; element(see "Example 2" in "example/example.html"):</h3>
+
 If it's hard to create the required data structure, you can directly create the &lt;select&gt; element. It's like the following:
 ```html
 <select id="sel_2" style="width:8em">
@@ -85,6 +87,8 @@ Then, you call Select2-to-Tree (the "`treeData`" argument of Select-to-Tree is n
 ```js
 $("#sel_2").select2ToTree();
 ```
+
+
 
 Copyright and license
 ---------------------
