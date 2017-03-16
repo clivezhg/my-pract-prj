@@ -55,7 +55,7 @@ And you call Select2-to-Tree (to generate a multiple select boxes):
 ```js
 $("#sel_1").select2ToTree({treeData: {dataArr:mydata}, maximumSelectionLength: 3});
 ```
-"`{treeData: {dataArr:mydata}`" is for Select2-to-Tree, "`maximumSelectionLength: 3`" is for Select2(and you can use the other Select2 parameters if needed)
+"`{treeData: {dataArr:mydata}`" is for Select2-to-Tree, "`maximumSelectionLength: 3`" is for Select2 (and you can set the other Select2 parameters if needed)
 
 About the data structure: "`id`" will be used as option value, "`name`" will be used as option label, and "`inc`" will be used to specify sub-level options. If your data structure is not like this, you can set parameters in "`treeData`" to change the default behavior, e.g., `treeData: {dataArr: mydata, valFld: "value", labelFld: "text", incFld: "sub"}`:
 - `dataArr`, an array.
@@ -69,6 +69,24 @@ The above are all the parameters supported by Select2-to-Tree
 2. directly create the `select` structure:
 ---------
 If it's hard to create the required data structure, you can create...
+It's like the following:
+```html
+<select id="sel_2" style="width:8em">
+   <option value="1" class="l1 non-leaf">opt_1</option>
+   <option value="11" data-pup="1" class="l2 non-leaf">opt_11</option>
+   <option value="111" data-pup="11" class="l3">opt_111</option>
+   <option value="12" data-pup="2" class="l2">opt_12</option>
+   <option value="2" class="l1">opt_2</option>
+   <option value="3" class="l1">opt_3</option>
+</select>
+```
+- the classes `l1`,`l2`,`l3`,`l4`,`l5`..., the nesting level.
+- the attribute `data-pup`, the option value of the parent level.
+- the class `non-leaf`, 
+Then, you call Select2-to-Tree:
+```js
+$("#sel_2").select2ToTree();
+```
 
 Copyright and license
 ---------------------
