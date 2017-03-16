@@ -26,7 +26,7 @@ Then, in your HTML document, you add the Select2 library (the `*.js` file & `*.c
 
 There are 2 ways to use Select2-to-Tree:
 
-<h3>1. Use data, and empty `select`(see "Example 1" in `example/example.html`):</h3>
+<h3>1. Use data, and empty <select>(see "Example 1" in `example/example.html`):</h3>
 
 Suppose your HTML is like this:
 ```html
@@ -58,11 +58,11 @@ $("#sel_1").select2ToTree({treeData: {dataArr:mydata}, maximumSelectionLength: 3
 "`{treeData: {dataArr:mydata}`" is for Select2-to-Tree, "`maximumSelectionLength: 3`" is for Select2 (and you can set the other Select2 parameters if needed)
 
 About the data structure: "`id`" will be used as option value, "`name`" will be used as option label, and "`inc`" will be used to specify sub-level options. If your data structure is not like this, you can set parameters in "`treeData`" to change the default behavior, e.g., `treeData: {dataArr: mydata, valFld: "value", labelFld: "text", incFld: "sub"}`:
-- `dataArr`, an array.
+- `dataArr`, an array containing the data.
 - `valFld`, the option value field, it's "`id`" by default.
 - `labelFld`, the option label field, it's "`name`" by default.
 - `incFld`, the sub options field, it's "`inc`" by default.
-- `dftVal`, the default value
+- `dftVal`, the default value.
 
 The above are all the parameters supported by Select2-to-Tree
 
