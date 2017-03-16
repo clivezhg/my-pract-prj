@@ -22,11 +22,12 @@ Usage
 -----
 Firstly, you need to know the usage of Select2: https://github.com/select2/select2
 
-Then, you add the Select2 library (the `*.js` file & `*.css` file, currently the version should be 4.0+), and the Select2-to-Tree library (the `*.js` file & `*.css` file in the "`src`" folder) to your HTML document.
+Then, in your HTML document, you add the Select2 library (the `*.js` file & `*.css` file, currently the version should be 4.0+), and the Select2-to-Tree library (the `*.js` file & `*.css` file in the "`src`" folder). jQuery is also needed.
 
 There are 2 ways to use Select2-to-Tree:
 
 1.
+---
 Suppose your HTML is like this:
 ```html
 <select id="sel_1" style="width:16em" multiple>
