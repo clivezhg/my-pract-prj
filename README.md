@@ -26,7 +26,7 @@ Then, in your HTML document, you add the Select2 library (the `*.js` file & `*.c
 
 There are 2 ways to use Select2-to-Tree:
 
-<h3>1. Use data, and empty &lt;select&gt;(see "Example 1" in `example/example.html`):</h3>
+<h3>1. Use data, and empty &lt;select&gt; element(see "Example 1" in "example/example.html"):</h3>
 
 Suppose your HTML is like this:
 ```html
@@ -64,12 +64,11 @@ About the data structure: "`id`" will be used as option value, "`name`" will be 
 - `incFld`, the sub options field, it's "`inc`" by default.
 - `dftVal`, the default value.
 
-The above are all the parameters supported by Select2-to-Tree
+The above are all the parameters supported by Select2-to-Tree.
 
-<h3>2. directly create the `select` structure(see "Example 2" in `example/example.html`):</h3>
+<h3>2. directly create the &lt;select&gt; element(see "Example 2" in "example/example.html"):</h3>
 
-If it's hard to create the required data structure, you can create...
-It's like the following:
+If it's hard to create the required data structure, you can directly create the &lt;select&gt; element. It's like the following:
 ```html
 <select id="sel_2" style="width:8em">
    <option value="1" class="l1 non-leaf">opt_1</option>
