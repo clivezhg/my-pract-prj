@@ -63,10 +63,12 @@ About the data structure: "`id`" will be used as option value, "`name`" will be 
 - `labelFld`, the option label field, it's "`name`" by default.
 - `incFld`, the sub options field, it's "`inc`" by default.
 - `dftVal`, the default value
+
 The above are all the parameters supported by Select2-to-Tree
 
 2. directly create the `select` structure:
 ---------
+If it's hard to create the required data structure, you can create...
 
 Copyright and license
 ---------------------
