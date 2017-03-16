@@ -4,7 +4,7 @@ Select2-to-Tree
 Select2-to-Tree is an extension to Select2, a popular select boxes library: https://github.com/select2/select2.
 
 Though Select2 is very versatile, it only supports a single level of nesting. See https://select2.github.io/options.html#how-many-levels-of-nesting-are-allowed:
-<blockquote style="font-size:smaller">
+<blockquote>
 How many levels of nesting are allowed?<br>
 Because Select2 falls back to an &lt;optgroup&gt; when creating nested options, only a single level of nesting is supported. Any additional levels of nesting is not guarenteed to be displayed properly across all browsers and devices.</blockquote>
 
@@ -26,7 +26,37 @@ Then, you add the Select2 library (the *.js file & *.css file, currently the ver
 
 There are 2 ways to use Select2-to-Tree:
 
-ot required because Select2 acts as a standard `<select>` box.
+1.
+Suppose your HTML is like this:
+```html
+<select id="sel_1" style="width:16em" multiple>
+</select>
+```
+And your data:
+```js
+var mydata = [
+   {id:1, name:"USA", inc:[
+      {name:"west", inc:[
+         {id:111, name:"California", inc:[
+            {id:1111, name:"Los Angeles", inc:[
+               {id:11111, name:"Hollywood"}
+            ]},
+            {id:1112, name:"San Diego"}
+         ]},
+         {id:112, name:"Oregon"},
+      ]},
+   ]},
+   {id:2, name:"India"},
+   {id:3, name:"中国"}
+];
+```
+And you call:
+```js
+$("#sel_1").select2ToTree({treeData: {dataArr:mydata}, maximumSelectionLength: 3});
+```
+Then, 
+`{treeData: {dataArr:mydata}` is for Select2-to-Tree, `maximumSelectionLength: 3` is for Select2(and you can use other Select2 parameters)
+
 
 
 Copyright and license
