@@ -26,7 +26,7 @@ Then, in your HTML document, you add the Select2 library (the `*.js` file & `*.c
 
 There are 2 ways to use Select2-to-Tree:
 
-1. Use data, & empty &ltselect&gt:
+1. Use data, & empty `select`:
 ---------
 Suppose your HTML is like this:
 ```html
@@ -65,7 +65,7 @@ About the data structure: "`id`" will be used as option value, "`name`" will be 
 - `dftVal`, the default value
 The above are all the parameters supported by Select2-to-Tree
 
-2. directly create the &ltselect&gt structure:
+2. directly create the `select` structure:
 ---------
 
 Copyright and license
