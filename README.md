@@ -43,8 +43,8 @@ var mydata = [
             ]},
             {id:1112, text:"San Diego"}
          ]},
-         {id:112, text:"Oregon"},
-      ]},
+         {id:112, text:"Oregon"}
+      ]}
    ]},
    {id:2, text:"India"},
    {id:3, text:"中国"}
