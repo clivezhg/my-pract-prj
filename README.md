@@ -90,7 +90,7 @@ $("#sel_2").select2ToTree();
 Constraints
 -----------
 - Ajax data source is not supported.
-- It's a little slower than plain Select2, because there are extra operations to do. Anyway, according to my test (you can check "Example 3" in "example/example.html", click the "India -> north"), 1500 options is basically acceptable, which can cover most of the real world cases.
+- It's a little slower than plain Select2, because there are extra operations to do. Anyway, according to my test (you can check "Example 3" in "example/example.html", click the "India -> north"), 1500 options is basically acceptable, which is enough in most of the real world cases.
 
 Copyright and license
 ---------------------
