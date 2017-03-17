@@ -56,7 +56,7 @@ $("#sel_1").select2ToTree({treeData: {dataArr:mydata}, maximumSelectionLength: 3
 ```
 "`{treeData: {dataArr:mydata}`" is for Select2-to-Tree, "`maximumSelectionLength: 3`" is for Select2 (and you can set the other Select2 arguments if needed)
 
-About the data structure: "`id`" will be used as option value, "`text`" will be used as option label, and "`inc`" will be used to specify sub-level options. If your data structure is not like this, you can set arguments in "`treeData`" to change the default behavior, e.g., `treeData: {dataArr: mydata, valFld: "value", labelFld: "text", incFld: "sub"}`:
+About the data structure: "`id`" will be used as option value, "`text`" will be used as option label, and "`inc`" will be used to specify sub-level options. If your data structure is not like this, you can set arguments in "`treeData`" to change the default behavior, e.g., `treeData: {dataArr: mydata, valFld: "value", labelFld: "name", incFld: "sub"}`:
 - `dataArr`, an array containing the data.
 - `valFld`, the option value field, it's "`id`" by default. (if the value is empty, the corresponding option will be unselectable, see the "west" option in the example)
 - `labelFld`, the option label field, it's "`text`" by default.
