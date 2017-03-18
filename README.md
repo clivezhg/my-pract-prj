@@ -95,6 +95,7 @@ Constraints
 Illustration
 ------------
 "Example 3" in "example/example.html":
+
 <img src="https://cloud.githubusercontent.com/assets/22025586/24068585/aa8c2294-0bcd-11e7-926f-db7dd34b50dd.png">
 
 Copyright and license
