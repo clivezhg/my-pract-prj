@@ -93,6 +93,8 @@ Constraints
 - AJAX data source is not supported.
 - It is a little slower than plain Select2, because there are extra operations to do. Anyway, according to my test (you can check "Example 3" in "example/example.html", click the "India -> north"), 1500 options is basically acceptable, which is enough in most of the real world cases.
 
+Illustration
+------------
 <img src="https://cloud.githubusercontent.com/assets/22025586/24068494/2f8ee4de-0bcb-11e7-92e0-001c1dbb3802.png">
 
 Copyright and license
