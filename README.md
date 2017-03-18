@@ -95,7 +95,7 @@ Constraints
 
 Illustration
 ------------
-<img src="https://cloud.githubusercontent.com/assets/22025586/24068494/2f8ee4de-0bcb-11e7-92e0-001c1dbb3802.png">
+<img src="https://cloud.githubusercontent.com/assets/22025586/24068585/aa8c2294-0bcd-11e7-926f-db7dd34b50dd.png">
 
 Copyright and license
 ---------------------
